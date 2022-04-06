@@ -5,4 +5,4 @@ Converts an image file to ascii characters
 * Clone this repo
 * Assign the file path of the image to the `filepath` variable
 * Run `python3 main.py`
-* Open the resulting html file using your browser
+* Open the resulting html file under the outputs directory using your browser
