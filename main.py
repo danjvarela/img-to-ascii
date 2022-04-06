@@ -10,13 +10,11 @@ from datetime import datetime
 asciiChars = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1\{\}[]?-_+~<>i!lI;:,\"^`'. "
 
 """
-Modify the resolution and the file path to your liking.
+Modify the resolution and to your liking.
 html output will be under the outputs directory.
 """
 # output image resolution
 imgResolution = 100
-# image directory string
-filepath = 'sample_inputs/saitama.png'
 
 # converts each pixel value to ascii character
 def convertToString(pixel_values):
@@ -50,6 +48,7 @@ def convertToString(pixel_values):
 
 
 def main():
+  filepath = input("Enter the file path: ")
   img = Image.open(filepath).convert("RGB")
 
   # get img actual width and height
